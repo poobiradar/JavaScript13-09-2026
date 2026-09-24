@@ -1,0 +1,37 @@
+<!doctype html>
+<html>
+
+<head>
+    <script>
+        let name = "Pooja";
+        let age = 31;
+        let login = false
+        let data = undefined;
+
+        if (name == "Pooja" && age == 31) { //Logical AND
+            console.log("Eligible for apply")
+        }
+        if (name == "Pooja" || age == 29) { //Logical OR
+            console.log("Eligible for apply")
+        }
+        if (!login) { //Logical NOT
+            console.log("Please Login");
+        }
+        data = data ?? age;//Nulish
+        console.log(data);
+        name &&= age; //Logical AND and assignment 
+        console.log(name);
+        name ||= age; // Logical OR and assignment
+        console.log(name);
+        data ??= name; //Nullish and assignment
+        console.log(data)
+
+    </script>
+</head>
+
+<body>
+    <h1>Logical Operators</h1>
+    <button>Click Me!</button>
+</body>
+
+</html>
